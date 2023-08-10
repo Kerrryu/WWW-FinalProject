@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { NavLink, useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { auth } from 'components/Firebase';
 
 import Header from 'components/Header';
@@ -17,6 +17,16 @@ function Register() {
     {
         navigate("/");
     }
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+          if (user) {
+            const uid = user.uid;
+            console.log("uid", uid);
+            navigate('/');
+          } 
+        });
+      }, []);
  
     const onSubmit = async (e) => {
       e.preventDefault()

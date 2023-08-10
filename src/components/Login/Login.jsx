@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { auth } from 'components/Firebase';
 import { NavLink, useNavigate } from 'react-router-dom'
 
@@ -16,6 +16,16 @@ function Login() {
   {
     navigate("/");
   }
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const uid = user.uid;
+        console.log("uid", uid);
+        navigate('/');
+      } 
+    });
+  }, []);
 
   const onLogin = (e) => {
     e.preventDefault();

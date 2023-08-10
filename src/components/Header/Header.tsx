@@ -1,11 +1,14 @@
 import * as S from './style';
 
 import { NavLink, useNavigate } from 'react-router-dom';
-import { onAuthStateChanged, signOut } from "firebase/auth";
+import { User, onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from 'components/Firebase';
 import { useEffect, useState } from 'react';
 
+type FirebaseUserState = User | null;
+
 const Header = () => {
+  let [currentUser, setUser] = useState<FirebaseUserState>(null);
   const navigate = useNavigate();
 
   const GoHome = () => {
@@ -29,18 +32,20 @@ const Header = () => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         const uid = user.uid;
+        setUser(user);
         console.log("uid", uid)
       } else {
+        setUser(null);
         console.log("user is logged out")
       }
     });
   }, []);
 
   const AuthInfo = () => {
-    if(auth.currentUser != null)
+    if(currentUser != null)
     {
       return (
-        <S.AuthClickText onClick={HandleLogout}>{auth.currentUser.email}</S.AuthClickText>
+        <S.AuthClickText onClick={HandleLogout}>{currentUser.email}</S.AuthClickText>
       );
     } else {
       return (
@@ -56,7 +61,7 @@ const Header = () => {
         <S.HeaderTitle>Terion Potions</S.HeaderTitle>
       </S.CenterAlign>
       <S.AuthContainer>
-        {AuthInfo()}
+        <AuthInfo></AuthInfo>
       </S.AuthContainer>
     </S.HeaderContainer>
   );
