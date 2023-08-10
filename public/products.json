@@ -1,0 +1,169 @@
+{
+  "products":[
+    {
+      "id":12,
+      "sku":12064273040195392,
+        "availableSizes":[
+           "Face",
+           "Body",
+           "Bundle",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Pack of 4 Potions",
+        "installments":3,
+        "price":80,
+        "style":"Bundle",
+        "title":"Pack of 4 Potions",
+        "isHotItem": true
+     },
+     {
+       "id":14,
+       "sku":10686354557628304,
+        "availableSizes":[
+           "Skin",
+           "Potion",
+           "Face"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Freedom at last! Let your skin breathe freely!",
+        "installments":0,
+        "price":9.99,
+        "style":"Skin",
+        "title":"Freedom Skin Potion",
+        "isHotItem": false
+     },
+     {
+       "id":15,
+       "sku":12043922961508200,
+        "availableSizes":[
+           "Body",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"The smell of paradise loathes your body fully with this exclusive...",
+        "installments":0,
+        "price":12.99,
+        "style":"Body",
+        "title":"Paradise Potion",
+        "isHotItem": false
+     },
+     {
+       "id":1,
+       "sku":18644122904932110,
+        "availableSizes":[
+           "Body",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Rub N Sleep",
+        "installments":0,
+        "price":10.99,
+        "style":"Body",
+        "title":"Sleep Potion",
+        "isHotItem": true
+     },
+     {
+       "id":2,
+       "sku":1180877432954528,
+        "availableSizes":[
+           "Body",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Body soothing lotion",
+        "installments":0,
+        "price":14.99,
+        "style":"Body",
+        "title":"Body Love Potion",
+        "isHotItem": false
+     },
+     {
+        "availableSizes":[
+           "Face",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Face ointment for smooth skin",
+        "id":3,
+        "installments":0,
+        "price":14.99,
+        "sku":876661122392077,
+        "style":"Face",
+        "title":"Fairy Fountain",
+        "isHotItem": true
+     },
+     {
+       "id":5,
+       "sku":10547961582846888,
+        "availableSizes":[
+           "Body",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"This is a potion that gives you extra energy when rubbed on your body and absorbed.",
+        "installments":0,
+        "price":14.99,
+        "style":"Body",
+        "title":"Body of Enegy Potion",
+        "isHotItem": false
+     },
+     {
+       "id":6,
+       "sku":6090484789343891,
+        "availableSizes":[
+           "Scrub",
+           "Body",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Bloom body scrubbing! Scrub scrub scrub.",
+        "installments":0,
+        "price":19.99,
+        "style":"Scrub",
+        "title":"Bloom Scruba Potion",
+        "isHotItem": false
+     },
+     {
+       "id":8,
+       "sku":5619496040738316,
+        "availableSizes":[
+           "Face",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Face lotion potion of balance. Control your face, tame it!",
+        "installments":0,
+        "price":14.99,
+        "style":"Face",
+        "title":"Balance of the Faces Potion",
+        "isHotItem": false
+     },
+     {
+       "id":9,
+       "sku":11600983276356164,
+        "availableSizes":[
+           "Scrub",
+           "Body",
+           "Potion"
+        ],
+        "currencyFormat":"$",
+        "currencyId":"USD",
+        "description":"Sapphire Scrubber, the majestic godess bestowed body scrub!",
+        "installments":4,
+        "price":100,
+        "style":"Scrub",
+        "title":"Blue Sapphire Scrub Potion",
+        "isHotItem": true
+     }
+  ]
+}

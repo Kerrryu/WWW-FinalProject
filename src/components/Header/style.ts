@@ -27,6 +27,7 @@ export const HeaderIcon = styled.div<IHeaderIcon>`
   margin-right: auto;
   margin-bottom: -20px;
   color: white;
+  cursor: pointer;
   background-image: url(${require('static/potion-icon.png')});
   background-repeat: no-repeat;
   background-size: contain;
@@ -39,4 +40,17 @@ export const HeaderTitle = styled.span`
   font-weight: bold;
   font-size: 1.2em;
   color: white;
+`;
+
+export const AuthContainer = styled.div`
+  position: absolute;
+  left: 10px;
+  top: 10px;
+`;
+
+export const AuthClickText = styled.span`
+  display: block;
+  font-size: 1.2em;
+  color: orange;
+  cursor: pointer;
 `;

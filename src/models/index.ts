@@ -25,5 +25,7 @@ export interface ICartTotal {
 }
 
 export interface IGetProductsResponse {
-  products: IProduct[];
+  data: {
+    products: IProduct[];
+  };
 }
